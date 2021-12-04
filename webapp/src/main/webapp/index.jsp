@@ -1,2 +1,3 @@
+Pipeline as code section...
 Hello, Welcome to this course!
 This is JENKINS Course :))
