@@ -11,7 +11,7 @@ pipeline {
 			post {
 				success {
 					echo '開始存檔'
-					archiveAetifacts artifacts: '**/target/*.war'
+					archiveArtifacts artifacts: '**/target/*.war'
 				}
 			}
 		}	
