@@ -1,1 +1,2 @@
-Hello, Welcome to this course! 歡迎來到JENKINS～
+Hello, Welcome to this course!
+This is JENKINS Course :))
