@@ -30,7 +30,7 @@ pipeline {
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        sh "scp -o StrictHostKeyChecking=no -i /home/user/Documents/tomcat-demo2.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat/webapps"
+                        sh "scp -o StrictHostKeyChecking=no -i /home/user/.ssh/tomcat-demo2.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat/webapps"
                     }
                 }
             }
