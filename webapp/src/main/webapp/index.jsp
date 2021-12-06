@@ -1,3 +1,3 @@
-Pipeline as code section...
-Hello, Welcome to this course!
-This is JENKINS Course :))
+Pipeline as code section...<br>
+This is JENKINS Course :))<br>
+Hello!!!
