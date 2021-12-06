@@ -6,8 +6,7 @@ pipeline {
     }
 
     parameters{
-        string(name: 'tomcat_dev', defaultValue: '3.15.175.75', description: 'Staging Server')
-        string(name: 'tomcat_prod', defaultValue: '13.58.179.83', description: 'Production Server')
+        string(name: 'tomcat_dev', defaultValue: '3.17.164.251', description: 'Staging Server')
     }
 
     triggers {
@@ -31,7 +30,7 @@ pipeline {
             parallel{
                 stage ('Deploy to Staging'){
                     steps {
-                        sh "scp -o StrictHostKeyChecking=no -i /home/user/.ssh/tomcat-demo.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat/webapps"
+                        sh "scp -o StrictHostKeyChecking=no -i /home/user/Documents/tomcat-demo2.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat/webapps"
                     }
                 }
             }
